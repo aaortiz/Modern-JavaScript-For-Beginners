@@ -1,3 +1,6 @@
+// html shortcut html:5 + enter gives you the code below
+// Note that putting JavaScript in the head section certain elements may be out of scope and not reachable
+// 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,6 +8,12 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Where to add JavaScript</title>
+		<script src="script1.js"> // it's best practice to keep HTML and Javascript separate for readability
+		</script>
 	</head>
-	<body></body>
+	<body>
+		<h1 id="title">Where to add JavaScript</h1> // h1 maps to header one which lets you access this element
+		// assign a name to an element with id param, note you want to make these unique
+		
+	</body>
 </html>

@@ -6,7 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Async & defer</title>
-  <script src="script1.js"></script>
+  <script src="script1.js" defer></script> // not if this script is long it could slow down the rendering of webpage
+  // async makes sure html keeps loading and not blocked but there are drawbakcs
+  // no order gaurantee which breaks assumptions of order or dependency
+  // defer ensures scripts run in order
+  <script src="script2.js" defer></script>
+  <script src="script3.js" defer></script>
 </head>
 
 <body>
